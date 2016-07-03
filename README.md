@@ -97,6 +97,8 @@ You can also add strings to empty strings:
 >>> 
 ```
 
+We're using concatenation to construct the string we need to print for each number.
+
 ##4. String Multiplication
 
 You can also use multiplication on a string to repeat it. For example:
