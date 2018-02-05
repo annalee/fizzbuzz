@@ -35,7 +35,7 @@ _But_ this solution does show off a few neat things about python, so let's dig i
 
 I'm starting with basic concepts for new devs here. If you already know how modulo and comparisons work, you can skip ahead to step 4.
 
-##1. Modulo
+## 1. Modulo
 
 The modulo operator (`%`) gives you the remainder of one number divided by another. For example:
 
@@ -55,7 +55,7 @@ When the first number can be evenly divided by the second, the modulo operator w
 
 In Fizzbuzzenstein's monster up there, the modulo operator appears four times: twice to check the remainder of a number divided by 3, and twice to check the remainder if divided by 5.
 
-##2. Comparison Operations
+## 2. Comparison Operations
 
 We're using two _comparison operations_ to test if our remainders are equal to (`==`) or greater than (`>`) zero. Comparison operations always evaluate to the boolean values `True` or `False`.
 
@@ -79,7 +79,7 @@ If both remainders are greater than 0, then x is not divisible by either 3 or 5,
 
 These are the tools you'll need for any straightforward solution to FizzBuzz. There are ways to solve it without using modulo and comparing the remainder, but if anyone ever asks you to, they're evaluating your skill at math, not programming.
 
-##3. String Concatenation
+## 3. String Concatenation
 
 In python, you add strings to other strings like this:
 
@@ -99,7 +99,7 @@ You can also add strings to empty strings:
 
 We're using concatenation to construct the string we need to print for each number.
 
-##4. String Multiplication
+## 4. String Multiplication
 
 You can also use multiplication on a string to repeat it. For example:
 
@@ -129,7 +129,7 @@ You can't print something 'negative' times, so it returns an empty string. Same 
 
 Neat, right? Hang onto that thought for a sec. We'll come back to it.
 
-##5. Booleans as Integers
+## 5. Booleans as Integers
 
 Up in Step 2, we used comparison operators to test if a number was divisible by 3 and/or 5. We also established that comparisons always return boolean values: `True` or `False`.
 
@@ -171,7 +171,7 @@ for x in [stringbuilder(x) for x in range(1,101)]: print(x)
 ```
 That's a lot less messy. But what's this stuff in the brackets doing?
 
-##6. List Comprehensions
+## 6. List Comprehensions
 
 List Comprehensions are my favorite part of python--they're a way to operate on items in a list in a compact and efficient way.
 
@@ -197,7 +197,7 @@ Here is our list comprehension, using our stringbuilder: `[stringbuilder(x) for 
 
 It's taking each number from the list and plugging it into our string-builder as x. Then it's storing the string-builder's string for that number in a new list.
 
-##7. Breaking it all out (Whitespace is our friend):
+## 7. Breaking it all out (Whitespace is our friend):
 
 List comprehensions are slick and powerful, but they're not as readable as normal `for loop`s. Here's what our list comprehension looks like as a normal loop that breaks all the steps out on their own lines:
 
